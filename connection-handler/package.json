@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "serverless": "^2.15",
+    "serverless-rust": "^0.3"
+  },
+  "name": "connection-handler"
+}

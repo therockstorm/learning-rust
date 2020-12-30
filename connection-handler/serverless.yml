@@ -1,0 +1,27 @@
+service: connection-handler
+
+provider:
+  name: aws
+  memorySize: 128
+  region: us-west-2
+  runtime: rust
+  timeout: 10
+
+package:
+  individually: true
+
+plugins:
+  - serverless-rust
+
+functions:
+  connection-handler:
+    handler: connection-handler
+    events:
+      - websocket:
+          route: $connect
+      - websocket:
+          route: $disconnect
+  # hello:
+  #   events:
+  #     - sqs: arn:aws:sqs:us-west-2:xxx:rocky-test
+  #   handler: hello

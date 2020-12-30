@@ -1,0 +1,10 @@
+[workspace]
+
+members = [
+    "core",
+    "cli",
+    "connection-handler",
+    "cpp-interop",
+    "grpc-service",
+    "pvs",
+]

@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "args": ["cli/test.xml", "cli/out.json"],
+      "cargo": {
+        "args": [
+          "build",
+          "--bin=cli",
+          "--package=cli",
+          "--manifest-path=Cargo.toml"
+        ],
+        "filter": {
+          "kind": "bin"
+        }
+      },
+      "name": "Debug",
+      "request": "launch",
+      "type": "lldb",
+    }
+  ]
+}

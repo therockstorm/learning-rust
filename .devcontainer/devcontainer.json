@@ -1,0 +1,35 @@
+{
+  "name": "learning-rust",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "runArgs": [
+    "--cap-add=SYS_PTRACE",
+    "--security-opt",
+    "seccomp=unconfined"
+  ],
+  "settings": {
+    "coverage-gutters": {
+      "showGutterCoverage": false,
+      "showLineCoverage": true
+    },
+    "files.watcherExclude": {
+      "**/target/**": true
+    },
+    "lldb.executable": "/usr/bin/lldb",
+    "rust-analyzer.diagnostics.disabled": [
+      "macro-error"
+    ],
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "bungcip.better-toml",
+    "matklad.rust-analyzer",
+    "ms-azuretools.vscode-docker",
+    "ryanluker.vscode-coverage-gutters",
+    "vadimcn.vscode-lldb"
+  ],
+  // "forwardPorts": [],
+  // "postCreateCommand": "rustc --version",
+  // "remoteUser": "vscode"
+}

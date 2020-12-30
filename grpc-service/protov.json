@@ -1,0 +1,11 @@
+[
+  {
+    "directory": "proto",
+    "dependencies": [
+      {
+        "name": "metadata-service",
+        "version": "0.0.9"
+      }
+    ]
+  }
+]

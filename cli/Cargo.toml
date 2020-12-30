@@ -1,0 +1,9 @@
+[package]
+name = "cli"
+version = "0.1.0"
+authors = ["Rocky Warren <1085683+therockstorm@users.noreply.github.com>"]
+edition = "2018"
+
+[dependencies]
+pvs = { path = "../pvs" }
+serde_json = "1.0"
